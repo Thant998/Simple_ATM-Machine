@@ -11,10 +11,12 @@ public class Account {
 
 	Scanner input = new Scanner(System.in);
 	DecimalFormat moneyFormat = new DecimalFormat("'$'###,##0.00");
-
+	
+	// non-constructor
 	public Account() {
 	}
-
+	
+	//parameter-constructor
 	public Account(int customerNumber, int pinNumber) {
 		this.customerNumber = customerNumber;
 		this.pinNumber = pinNumber;
@@ -26,7 +28,8 @@ public class Account {
 		this.checkingBalance = checkingBalance;
 		this.savingBalance = savingBalance;
 	}
-
+	
+	//getter & setter
 	public int setCustomerNumber(int customerNumber) {
 		this.customerNumber = customerNumber;
 		return customerNumber;
