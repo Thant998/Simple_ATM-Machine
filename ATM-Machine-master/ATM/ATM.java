@@ -6,7 +6,9 @@ public class ATM {
 		introduction();
 		optionMenu.mainMenu();
 	}
+	
 	public static void introduction() {
 		System.out.println("Welcome to the ATM Project!");
 	}
+	
 }
